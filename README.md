@@ -210,18 +210,31 @@
 
     HTTP 404 : user not found (incorrect token)
 
-# radionoise_socket api
-
-* make : make message group
+* POST /open
 
 > Param
 
-    token : User token [String]
-    
-    chat_people: User and someone who chat with Users [String Array]
-    
-> return emit make
+    token : user token [String]
 
-    room_token: maked room token
+>  Response
 
-> u must make socket.on(make)
+    HTTP 200 : su
+
+    HTTP 400 : param missing or null
+
+    HTTP 412 : user not found (incorrect token)
+
+
+* GET /open/{token}
+
+> Param
+
+    token : user token [String]
+
+>  Response
+
+    HTTP 200 : open
+
+    HTTP 404 : close
+
+    HTTP 412 : user not found (incorrect token)
