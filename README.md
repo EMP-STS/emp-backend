@@ -1,6 +1,8 @@
 # emp-backend
 
- radionoise_backend
+emp_backend
+
+# request url iwin247.kr:3002
 
 # rest api
 
